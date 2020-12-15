@@ -1,0 +1,222 @@
+{
+    "ReservationResponse": {
+        "Reservation": {
+            "@type": "Reservation",
+            "Offer": [
+                {
+                    "@type": "Offer",
+                    "id": "offer_1",
+                    "Identifier": {
+                        "authority": "Travelport",
+                        "value": "5f656a39-0bf7-43f1-a3d5-2db8a13cafd4"
+                    },
+                    "Product": [
+                        {
+                            "@type": "ProductAir",
+                            "id": "product_1",
+                            "FlightSegment": [
+                                {
+                                    "id": "FlightSegment_01",
+                                    "sequence": 1,
+                                    "Flight": {
+                                        "@type": "Flight",
+                                        "duration": "PT1H55M",
+                                        "carrier": "QF",
+                                        "number": "0575",
+                                        "equipment": "333",
+                                        "id": "Flight_01",
+                                        "Departure": {
+                                            "@type": "Departure",
+                                            "location": "SYD",
+                                            "date": "2021-02-12",
+                                            "time": "08:25:00"
+                                        },
+                                        "Arrival": {
+                                            "@type": "Arrival",
+                                            "location": "PER",
+                                            "date": "2021-02-12",
+                                            "time": "10:20:00"
+                                        }
+                                    }
+                                }
+                            ],
+                            "PassengerFlight": [
+                                {
+                                    "passengerQuantity": 1,
+                                    "passengerTypeCode": "ADT",
+                                    "FlightProduct": [
+                                        {
+                                            "segmentSequence": [
+                                                1
+                                            ],
+                                            "classOfService": "Y",
+                                            "cabin": "Economy",
+                                            "fareBasisCode": "YOW",
+                                            "fareType": "PublicFare"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "Price": {
+                        "@type": "PriceDetail",
+                        "id": "PriceDetail_1",
+                        "Base": 1619.78,
+                        "TotalTaxes": 182.47,
+                        "TotalFees": 0,
+                        "TotalPrice": 1802.25,
+                        "PriceBreakdown": [
+                            {
+                                "@type": "PriceBreakdownAir",
+                                "quantity": 1,
+                                "requestedPassengerType": "ADT",
+                                "Amount": {
+                                    "currencyCode": "AUD",
+                                    "Base": 1619.78,
+                                    "Taxes": {
+                                        "@type": "TaxesDetail",
+                                        "TotalTaxes": 182.47,
+                                        "Tax": [
+                                            {
+                                                "currencyCode": "AUD",
+                                                "taxCode": "QR",
+                                                "value": 18.63
+                                            },
+                                            {
+                                                "currencyCode": "AUD",
+                                                "taxCode": "UO",
+                                                "value": 163.84
+                                            }
+                                        ]
+                                    },
+                                    "Total": 1802.25
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "Traveler": [
+                {
+                    "@type": "Traveler",
+                    "passengerTypeCode": "ADT",
+                    "id": "trav_1",
+                    "Identifier": {
+                        "authority": "Travelport",
+                        "value": "441439af-0d3f-414e-b267-32c73e444bd4"
+                    },
+                    "PersonName": {
+                        "@type": "PersonName",
+                        "Given": "SELVARAJ",
+                        "Surname": "JANANI"
+                    },
+                    "Telephone": [
+                        {
+                            "@type": "TelephoneDetail",
+                            "phoneNumber": "NONE",
+                            "id": "telephone_1"
+                        }
+                    ]
+                }
+            ],
+            "FormOfPayment": [
+                {
+                    "@type": "FormOfPaymentCash",
+                    "id": "formOfPayment_1",
+                    "Identifier": {
+                        "authority": "Travelport",
+                        "value": "59110965-f8ea-4d0f-9ebd-7034066d9c7b"
+                    }
+                }
+            ],
+            "Receipt": [
+                {
+                    "@type": "ReceiptConfirmation",
+                    "Identifier": {
+                        "authority": "Travelport",
+                        "value": "71ef9113-b253-4410-8c3b-dd8fba3890ae"
+                    },
+                    "Confirmation": {
+                        "@type": "ConfirmationHold",
+                        "Locator": {
+                            "source": "1G",
+                            "value": "ZHZ3GW"
+                        },
+                        "OfferStatus": {
+                            "@type": "OfferStatusAir",
+                            "StatusAir": [
+                                {
+                                    "flightRefs": [
+                                        "Flight_01"
+                                    ],
+                                    "code": "HK",
+                                    "value": "Confirmed"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "@type": "ReceiptConfirmation",
+                    "Identifier": {
+                        "authority": "Travelport",
+                        "value": "3fc11545-7180-439a-b827-38ca43c080b0"
+                    },
+                    "Confirmation": {
+                        "@type": "ConfirmationHold",
+                        "Locator": {
+                            "source": "1A",
+                            "value": "LVMMCO"
+                        }
+                    }
+                },
+                {
+                    "@type": "ReceiptPayment",
+                    "Identifier": {
+                        "authority": "Travelport",
+                        "value": "37494fcf-89f6-4bdc-a15c-c101146ceb4d"
+                    },
+                    "Document": [
+                        {
+                            "@type": "DocumentTicket",
+                            "Number": "0813767377724",
+                            "TravelerRef": "trav_1",
+                            "Amount": {
+                                "Total": 1802.25
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "Identifier": {
+            "authority": "Travelport",
+            "value": "2d9da63f-8859-4800-bf52-2f69490a445b"
+        },
+        "ReferenceList": [
+            {
+                "@type": "ReferenceListTermsAndConditions",
+                "TermsAndConditions": [
+                    {
+                        "@type": "TermsAndConditionsAir",
+                        "BaggageAllowance": [
+                            {
+                                "@type": "BaggageAllowanceDetail",
+                                "passengerTypeCodes": [
+                                    "ADT"
+                                ],
+                                "SegmentSequenceList": [
+                                    1
+                                ],
+                                "Text": [
+                                    "1PC"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
